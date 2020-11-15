@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    
+    <title>binary</title>
+</head>
+
+<body>
+    <div class='intro'>
+
+        <h1> 
+        
+            <div id="binaryH" class="zagolovok">BINARY</div> 
+        
+            <div id="guessH" class="zagolovok" >guess</div>
+        
+        </h1>
+        
+        <h2 class="zagolovok second">  who thinks of a number</h2>
+        
+        <button id="machineBtn" class='btnСhoice'>machine</button>
+        
+        <button id='humanBtn' class='btnСhoice'>human</button>
+    </div>
+        
+    <div id="machine" class='game'>
+        
+        <div class='left'> 
+        
+            <h1>Machine thinks of a number</h1>
+        
+            <h2 id="message"> enter number </h2> 
+        
+            <label for="min" >from</label>
+        
+            <input type="number" class="min">
+        
+            <label for="max" >to</label>
+        
+            <input type="number" class="max">
+        
+            <div> 
+        
+                <button class="howTurnsBtn gameBtn"  >how many attempts</button>
+        
+            </div>
+        
+            <h2 id="message2">enter number</h2>
+        
+            <input type="number" id='inputNumber'>
+        
+            <div>
+        
+                <button id='btnStart' class='gameBtn'>start</button>
+        
+            </div>
+        
+            <h2 id='vyvod'></h2>
+        
+            <h2 id="answer"></h2>
+        
+        </div>
+    </div>
+        
+    <div id='human' class='game '>
+        
+        <div class='left'>
+        
+            <h1>Human thinks of a number</h1>
+        
+            <h2 id='message3'>enter number</h2>
+        
+            <label for='min2'>guess a number from</label>
+        
+            <input type="number" id='min2'>
+        
+            <label for='max2'> to</label>
+        
+            <input type='number' id='max2'>
+        
+            <div>
+        
+                <button id='btnStart2' class='gameBtn' >start</button>
+        
+            </div>
+        
+            <button id="lessBtn" class='gameBtn'>less</button>
+        
+            <button id='yesBtn' class='gameBtn'>yes</button>
+        
+            <button id="biggerBtn" class='gameBtn'>bigger</button>
+        
+            <h2 id='result'></h2>
+        
+        </div>
+
+    </div>
+    
+    <button id ='restartBtn' class="restartBtn">RESTART</button>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
